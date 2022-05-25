@@ -6,6 +6,7 @@
 //
 // Scripts
 // 
+var numProjects = 8;
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -52,7 +53,8 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Activate SimpleLightbox plugin for portfolio items
-    for (let i = 0; i < 4; i++) {
+
+    for (let i = 0; i < numProjects; i++) {
         var elems = '#portfolio a.project-' + i.toString();
         new SimpleLightbox(elems, {captionSelector: "self"});    
     }
