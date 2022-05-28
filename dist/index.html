@@ -24,14 +24,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">rosefilmm</a>
+                <a class="navbar-brand" href="#page-top" id="navbar-brand"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact & Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" id="navbar-content-1"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" id="navbar-content-2"></a></li>
                     </ul>
                 </div>
             </div>
@@ -41,12 +41,12 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="title-text font-weight-bold">rosefilmm photography</h1>
+                        <h1 class="title-text font-weight-bold" id="title"></h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">My name is Sabrina and I am a freelance photographer located in Manhattan, NYC. My web designer is pretty cool but she sucks at writing bios, so I'll have to update this soon.</p>
-                        <a class="btn btn-primary btn-xl" href="#portfolio">view portfolio</a>
+                        <p class="text-white-75 mb-5" id="bio"></p>
+                        <a class="btn btn-primary btn-xl" href="#portfolio" id="bio-button"></a>
                     </div>
                 </div>
             </div>
@@ -59,8 +59,8 @@
                         <a class="portfolio-box project-0" href="assets/img/portfolio/fullsize/wedding_1/img_1.jpg" title="project 1 image 1 caption">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/wedding_1.jpg" alt="..."/>
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Weddings</div>
-                                <div class="project-name">Couple 1</div>
+                                <div class="project-category text-white-50" id="project-0-title"></div>
+                                <div class="project-name" id="project-0-subtitle"></div>
                             </div>
                         </a>
                         <a class="project-0" href="assets/img/portfolio/fullsize/wedding_1/img_2.jpg" title="project 1 image 2 caption"></a>
@@ -72,7 +72,8 @@
                         <a class="portfolio-box project-1" href="assets/img/portfolio/fullsize/portraits/portrait_1.jpg" title="Cynthia in Times Square">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/portraits.jpg" alt="..."  />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Portraits</div>                               
+                                <div class="project-category text-white-50" id="project-1-title"></div>
+                                <div class="project-name" id="project-1-subtitle"></div>                           
                             </div>
                         </a>
                         <a class="project-1" href="assets/img/portfolio/fullsize/portraits/portrait_2.jpg" title="Linda in Central Park"></a>
@@ -84,8 +85,8 @@
                         <a class="portfolio-box project-2" href="assets/img/portfolio/fullsize/wedding_2/img_1.jpg" title="project 3 caption">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/wedding_2.jpg" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">category 3</div>
-                                <div class="project-name">project 3</div>
+                                <div class="project-category text-white-50" id="project-2-title"></div>
+                                <div class="project-name" id="project-2-subtitle"></div>
                             </div>
                         </a>
                         <a class="project-2" href="assets/img/portfolio/fullsize/wedding_2/img_2.jpg" title="project 3 caption"></a>
@@ -101,8 +102,8 @@
                         <a class="portfolio-box project-3" href="assets/img/portfolio/fullsize/wedding_3/img_1.jpg" title="Project 4">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/wedding_3.jpg" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category 4</div>
-                                <div class="project-name">Project 4</div>
+                                <div class="project-category text-white-50" id="project-3-title"></div>
+                                <div class="project-name" id="project-3-subtitle"></div>
                             </div>
                         </a>
                         <a class="project-3" href="assets/img/portfolio/fullsize/wedding_3/img_2.jpg" title="Project 4 caption"></a>
@@ -115,8 +116,8 @@
                         <a class="portfolio-box project-4" href="assets/img/portfolio/fullsize/family_1/img_1.jpg" title="Project 5">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/family_1.jpg" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category 5</div>
-                                <div class="project-name">Project 5</div>
+                                <div class="project-category text-white-50" id="project-4-title"></div>
+                                <div class="project-name" id="project-4-subtitle"></div>
                             </div>
                         </a>
                         <a class="project-4" href="assets/img/portfolio/fullsize/family_1/img_2.jpg" title="Project 5 caption"></a>
@@ -146,21 +147,14 @@
                 </div>
             </div>
         </section>
-        <!-- Call to action-->
-        <!-- <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-            </div>
-        </section> -->
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <h2 class="mt-0" id="contact-info-header"></h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Ready to capture your special moments with us? Send us a message and we will get back to you as soon as possible!</p>
+                        <p class="text-muted mb-5" id="contact-info-text"></p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -170,35 +164,29 @@
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."/>
-                                <label for="name">Full name</label>
+                                <label for="name" id="contact-info-name"></label>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"/>
-                                <label for="email">Email address</label>
+                                <label for="email" id="contact-info-email"></label>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890"/>
-                                <label for="phone">Phone number</label>
+                                <label for="phone" id="contact-info-phone"></label>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="message">Message</label>
+                                <label for="message" id="contact-info-message"></label>
                             </div>
                             <div class="d-grid">
-                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-xl" id="contact-button" type="submit"></button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <!-- <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+1 (555) 123-4567</div>
-                    </div>
-                </div> -->
             </div>
         </section>
         <!-- Footer-->
@@ -211,10 +199,10 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted">Copyright &copy; 2022 - rosefilmm</div>
+                <div class="small text-center text-muted" id="copyright"></div>
             </div>
             <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted">Last Updated: May 2022 - Cynthia Chang</div>
+                <div class="small text-center text-muted" id="last-updated"></div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -226,6 +214,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/constants.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

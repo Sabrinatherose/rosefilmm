@@ -6,9 +6,67 @@
 //
 // Scripts
 // 
-var numProjects = 8;
-
 window.addEventListener('DOMContentLoaded', event => {
+    // Activate SimpleLightbox plugin for portfolio items
+    for (i in projects) {
+        var elems = '#portfolio a.project-' + i.toString();
+        new SimpleLightbox(elems, { captionSelector: "self", captions: false });
+    }
+
+    function loadNavigationBar() {
+        makeElementText(brand_name, "navbar-brand");
+        makeElementText(navbar_content_1, "navbar-content-1");
+        makeElementText(navbar_content_2, "navbar-content-2");
+    }
+
+    function loadBiography() {
+        makeElementText(title, "title");
+        makeElementText(bio, "bio");
+        makeElementText(bio_button, "bio-button");
+    }
+
+    function loadContactInfo() {
+        makeElementText(contact_info_header, "contact-info-header");
+        makeElementText(contact_info_text, "contact-info-text");
+        makeElementText(contact_info_name, "contact-info-name");
+        makeElementText(contact_info_email, "contact-info-email");
+        makeElementText(contact_info_phone, "contact-info-phone");
+        makeElementText(contact_info_message, "contact-info-message");
+        makeElementText(contact_button, "contact-button");
+    }
+
+    function loadPortfolio() {
+        const project = "project-";
+        const title = "-title";
+        const subtitle = "-subtitle";
+        for (i in projects) {
+            let html_title = getTitle(i);
+            let html_subtitle = getSubtitle(i);
+            if (html_title) {
+                var project_title = project + i.toString() + title;
+                makeElementText(html_title, project_title);
+            }
+            if (html_subtitle) {
+                var project_subtitle = project + i.toString() + subtitle;
+                makeElementText(html_subtitle, project_subtitle);
+            }
+        }
+    }
+
+    function loadFooter() {
+        makeElementText(copyright, "copyright");
+        makeElementText(last_updated, "last-updated");
+    }
+
+    // Load the dynamic contents
+    function loadContents() {
+        loadNavigationBar();
+        loadBiography();
+        loadContactInfo();
+        loadFooter();
+        loadPortfolio();
+    }
+    loadContents();
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -52,10 +110,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
+    function makeElementText(html, id) {
+        let x = document.getElementById(id);
+        x.innerHTML = html;
+    }
 
-    for (let i = 0; i < numProjects; i++) {
-        var elems = '#portfolio a.project-' + i.toString();
-        new SimpleLightbox(elems, {captionSelector: "self"});    
+    function getTitle(index) {
+        if (projects[index]) {
+            return projects[index].title;
+        }
+        return null;
+    }
+
+    function getSubtitle(index) {
+        if (projects[index]) {
+            return projects[index].subtitle;
+        }
+        return null;
     }
 });
